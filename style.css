@@ -25,13 +25,38 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 25px;
-  color: wheat;
+  color: white;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.5s ease-in;
+  transition: flex 0.4s ease-in;
 }
 
 .panel h3 {
+  font-size: 22px;
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {s
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
