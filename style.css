@@ -24,7 +24,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 25px;
+  border-radius: 75px;
   color: white;
   cursor: pointer;
   flex: 0.5;
@@ -42,7 +42,7 @@ body {
   opacity: 0;
 }
 
-.panel.active {s
+.panel.active {
   flex: 5;
 }
 
